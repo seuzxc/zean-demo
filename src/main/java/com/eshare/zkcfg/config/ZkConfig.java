@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
+import org.apache.curator.framework.recipes.cache.NodeCache;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -75,6 +76,10 @@ public class ZkConfig {
         }
 
         for (String path : childrenPaths) {
+
+            NodeCache nodeCache = Caches.nodeCache(client, path,dataCfg);
+            nodeCache.start(true);
+
             byte[] data = client.getData().forPath(path);
             int indexOfCurrentNode = path.lastIndexOf("/") + 1;
             dataCfg.put(path.substring(indexOfCurrentNode), new String(data));
