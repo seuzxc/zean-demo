@@ -1,8 +1,21 @@
 
-purpose
+Goals
 ====
 
-this project is a demo for zookeeper usage : use zk as a configuration center
+This project is a demo for zookeeper usage 
 
-some info to set 
+- configuration center
+
+-
+
+
+
+Framework used
 ====
+- Curator
+  
+  a lib convenient for the usage of zookeeper,
+  it has fluent style programing and remove som
+  the complexity of zk management 
+
+

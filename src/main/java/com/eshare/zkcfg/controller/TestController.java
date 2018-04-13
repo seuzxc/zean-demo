@@ -27,7 +27,7 @@ public class TestController {
      * @return
      */
     @GetMapping(value = "/zk-data/{key}")
-    public String getZkCfgData(@PathVariable("key") String key) {
+    public String getDynamicZkData(@PathVariable("key") String key) {
         return cfg.get(key);
     }
 }

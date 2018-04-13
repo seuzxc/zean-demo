@@ -20,7 +20,7 @@ import org.springframework.util.CollectionUtils;
  ****/
 
 @Configuration
-public class ZkConfig {
+public class ZkCfg {
 
     @Value("${zookeeper.host}")
     private String zkHost;
@@ -79,8 +79,9 @@ public class ZkConfig {
 
             NodeCache nodeCache = Caches.nodeCache(client, path,dataCfg);
             nodeCache.start(true);
+            //nodeCache.getCurrentData().getData()
 
-            byte[] data = client.getData().forPath(path);
+            byte[] data = nodeCache.getCurrentData().getData();
             int indexOfCurrentNode = path.lastIndexOf("/") + 1;
             dataCfg.put(path.substring(indexOfCurrentNode), new String(data));
             //preorder traversal of the zookeeper nodes

@@ -1,4 +1,4 @@
-package com.eshare.zkcfg.config;
+package com.eshare.zkcfg.example;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
  ****/
 
 @Service
-public class CfgTest {
+public class ConfigurationCenterService {
 
     @Autowired
     private CuratorFramework client;
@@ -25,7 +25,7 @@ public class CfgTest {
     private String level2;
 
     /***
-     * get the znode data with full path
+     * get the znode data with full path, the return data is sync with server
      * @param path
      * @return
      * @throws Exception
@@ -37,10 +37,13 @@ public class CfgTest {
 
     /***
      * print the znode data according to the @Value annotation
+     * the value was set and the bean created, if the data in server is updated after the bean created
+     * the value in this application wouldn't change
      */
-    public void printPropertyValueWithAnnotation() {
-        System.err.println(level2);
+    public String getDataInitAtApplicationStart() {
+        return level2;
     }
+
 
 
 

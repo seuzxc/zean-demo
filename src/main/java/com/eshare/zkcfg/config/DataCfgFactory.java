@@ -8,6 +8,8 @@ import java.util.concurrent.ConcurrentHashMap;
  * Created at 2018/3/22
  * @Email zxc200706@hotmail.com
  *
+ * it's used to store config in map style
+ *
  ****/
 
 public class DataCfgFactory extends ConcurrentHashMap<String,String> {

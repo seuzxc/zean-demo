@@ -1,6 +1,6 @@
 package com.eshare.zkcfg;
 
-import com.eshare.zkcfg.config.CfgTest;
+import com.eshare.zkcfg.example.ConfigurationCenterService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -11,7 +11,7 @@ public class ZkCfgApplication {
     public static void main(String[] args) {
         ApplicationContext applicationContext = SpringApplication
             .run(ZkCfgApplication.class, args);
-        CfgTest test = applicationContext.getBean(CfgTest.class);
+        ConfigurationCenterService test = applicationContext.getBean(ConfigurationCenterService.class);
 
         try {
 
@@ -20,7 +20,7 @@ public class ZkCfgApplication {
             System.err.println(data);
 
             //print the data set with @Value
-            test.printPropertyValueWithAnnotation();
+            System.err.println(test.getDataInitAtApplicationStart());
 
         } catch (Exception e) {
             e.printStackTrace();
