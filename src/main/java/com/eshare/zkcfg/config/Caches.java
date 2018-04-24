@@ -5,9 +5,9 @@ import org.apache.curator.framework.recipes.cache.NodeCache;
 import org.apache.curator.framework.recipes.cache.NodeCacheListener;
 
 /*****
- * @Author zengxiangcai
+ * @Author zean
  * Created at 2018/3/22
- * @Email zengxiangcai@yishufu.com
+ * @Email zxc200706@hotmail.com
  *
  ****/
 

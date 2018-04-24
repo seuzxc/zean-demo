@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.ebook.chapter03.designpattern.factorymethod</OriginalElement>
+  <nodes>
+    <node x="364.3479166666667" y="437.0">com.ebook.chapter03.designpattern.factorymethod.FactoryMethodTest</node>
+    <node x="323.72291666666666" y="0.0">com.ebook.chapter03.designpattern.factorymethod.Coupon</node>
+    <node x="624.0" y="137.0">com.ebook.chapter03.designpattern.factorymethod.AmountCoupon</node>
+    <node x="345.0" y="163.0">com.ebook.chapter03.designpattern.factorymethod.CouponConstructor</node>
+    <node x="0.0" y="111.0">com.ebook.chapter03.designpattern.factorymethod.RateCoupon</node>
+    <node x="654.5708333333333" y="326.0">com.ebook.chapter03.designpattern.factorymethod.AmountCouponConstructor</node>
+    <node x="139.95" y="326.0">com.ebook.chapter03.designpattern.factorymethod.RateCouponConstructor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.ebook.chapter03.designpattern.factorymethod.AmountCouponConstructor" target="com.ebook.chapter03.designpattern.factorymethod.CouponConstructor">
+      <point x="-99.375" y="-30.5" />
+      <point x="687.6958333333333" y="301.0" />
+      <point x="560.8333333333333" y="301.0" />
+      <point x="86.33333333333326" y="30.5" />
+    </edge>
+    <edge source="com.ebook.chapter03.designpattern.factorymethod.AmountCouponConstructor" target="com.ebook.chapter03.designpattern.factorymethod.Coupon">
+      <point x="99.375" y="-30.5" />
+      <point x="886.4458333333333" y="301.0" />
+      <point x="949.5" y="301.0" />
+      <point x="949.5" y="81.0" />
+      <point x="607.2229166666666" y="81.0" />
+      <point x="126.0" y="30.5" />
+    </edge>
+    <edge source="com.ebook.chapter03.designpattern.factorymethod.RateCouponConstructor" target="com.ebook.chapter03.designpattern.factorymethod.Coupon">
+      <point x="32.375" y="-30.5" />
+      <point x="301.825" y="301.0" />
+      <point x="334.5" y="301.0" />
+      <point x="334.5" y="91.0" />
+      <point x="418.22291666666666" y="91.0" />
+      <point x="-63.0" y="30.5" />
+    </edge>
+    <edge source="com.ebook.chapter03.designpattern.factorymethod.RateCoupon" target="com.ebook.chapter03.designpattern.factorymethod.Coupon">
+      <point x="0.0" y="-82.5" />
+      <point x="162.0" y="81.0" />
+      <point x="355.22291666666666" y="81.0" />
+      <point x="-126.0" y="30.5" />
+    </edge>
+    <edge source="com.ebook.chapter03.designpattern.factorymethod.CouponConstructor" target="com.ebook.chapter03.designpattern.factorymethod.Coupon">
+      <point x="0.0" y="-30.5" />
+      <point x="474.5" y="91.0" />
+      <point x="481.22291666666666" y="91.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="com.ebook.chapter03.designpattern.factorymethod.FactoryMethodTest" target="com.ebook.chapter03.designpattern.factorymethod.RateCouponConstructor">
+      <point x="-72.66666666666674" y="-30.5" />
+      <point x="400.68125" y="412.0" />
+      <point x="269.45" y="412.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="com.ebook.chapter03.designpattern.factorymethod.AmountCoupon" target="com.ebook.chapter03.designpattern.factorymethod.Coupon">
+      <point x="0.0" y="-56.5" />
+      <point x="781.5" y="91.0" />
+      <point x="544.2229166666666" y="91.0" />
+      <point x="63.0" y="30.5" />
+    </edge>
+    <edge source="com.ebook.chapter03.designpattern.factorymethod.FactoryMethodTest" target="com.ebook.chapter03.designpattern.factorymethod.AmountCouponConstructor">
+      <point x="72.66666666666657" y="-30.5" />
+      <point x="546.0145833333333" y="412.0" />
+      <point x="787.0708333333333" y="412.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="com.ebook.chapter03.designpattern.factorymethod.RateCouponConstructor" target="com.ebook.chapter03.designpattern.factorymethod.RateCoupon">
+      <point x="-32.375" y="-30.5" />
+      <point x="237.075" y="301.0" />
+      <point x="243.0" y="301.0" />
+      <point x="81.0" y="82.5" />
+    </edge>
+    <edge source="com.ebook.chapter03.designpattern.factorymethod.FactoryMethodTest" target="com.ebook.chapter03.designpattern.factorymethod.CouponConstructor">
+      <point x="-5.6843418860808015E-14" y="-30.5" />
+      <point x="473.34791666666666" y="412.0" />
+      <point x="474.5" y="412.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="com.ebook.chapter03.designpattern.factorymethod.RateCouponConstructor" target="com.ebook.chapter03.designpattern.factorymethod.CouponConstructor">
+      <point x="97.125" y="-30.5" />
+      <point x="366.575" y="301.0" />
+      <point x="388.1666666666667" y="301.0" />
+      <point x="-86.33333333333331" y="30.5" />
+    </edge>
+    <edge source="com.ebook.chapter03.designpattern.factorymethod.AmountCouponConstructor" target="com.ebook.chapter03.designpattern.factorymethod.AmountCoupon">
+      <point x="-33.125" y="-30.5" />
+      <point x="753.9458333333333" y="301.0" />
+      <point x="702.75" y="301.0" />
+      <point x="-78.75" y="56.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="307.5" y="298.0" />
+  <SelectedNodes>
+    <node>com.ebook.chapter03.designpattern.factorymethod.CouponConstructor</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

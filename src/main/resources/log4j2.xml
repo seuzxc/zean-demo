@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration strict="true" monitorInterval="30">
   <Properties>
-    <Property name="logPath">C:/tools/LOGTest</Property>
+    <Property name="logPath">/logs</Property>
     <Property name="logPattern">%d [%t] %C %-5level: %X{key} %m%n</Property>
   </Properties>
   <!--  config the compositeFilter
@@ -43,12 +43,12 @@
     </RollingFile>
   </Appenders>
   <Loggers>
-    <Logger name="com.ebook.chapter01" level="TRACE" additivity="true">
+    <Logger name="com.ebook.chapter01" level="INFO" additivity="true">
       <AppenderRef ref="File"/>
       <AppenderRef ref="STDOUT"/>
       <AppenderRef ref="file1"/>
     </Logger>
-    <Root level="trace">
+    <Root level="INFO">
       <AppenderRef ref="STDOUT"></AppenderRef>
     </Root>
   </Loggers>
