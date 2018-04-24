@@ -54,5 +54,31 @@
     高效安全的实施程序对象间的行为
     - 责任链模式(Chain of responsibility): 将一个请求的发送者和接受者解耦，
     从而可以使多个接受者处理这个请求（所有接受者以链式连接，请求沿着链进行，知道有一个处理它）
-    -命令模式(Command)
-    
+    -命令模式(Command): 将一个请求封装为一个对象，从而使你可以用不同的请求对客户端进行参数化;
+    对请求排序，记录请求日志。同时支持可撤销的操作
+   
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+参考
+======    
+https://springframework.guru/gang-of-four-design-patterns/
+https://refactoring.guru/design-patterns/chain-of-responsibility
