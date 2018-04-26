@@ -2,11 +2,13 @@
 Goals
 ====
 
-This project is a demo for zookeeper usage 
+This project is a demo for some java tech
 
-- configuration center
+- zookeeper：configuration center
 
--
+- design pattern
+
+- log
 
 
 
@@ -19,3 +21,5 @@ Framework used
   the complexity of zk management 
 
 
+
+-- continue ---
