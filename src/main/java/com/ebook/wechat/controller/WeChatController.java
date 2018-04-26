@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /*****
- * @Author zengxiangcai
+ * @Author zean
  * Created at 2018/4/23
- * @Email zengxiangcai@yishufu.com
+ * @Email zxc200706@hotmail.com
  * 微信公众号
  ****/
 @RequestMapping("/wechat")

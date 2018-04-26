@@ -5,9 +5,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 /*****
- * @Author zengxiangcai
+ * @Author zean
  * Created at 2018/4/19
- * @Email zengxiangcai@yishufu.com
+ * @Email zxc200706@hotmail.com
  *
  ****/
 

@@ -1,9 +1,9 @@
 package com.ebook.chapter03.designpattern.structural.proxy;
 
 /*****
- * @Author zengxiangcai
+ * @Author zean
  * Created at 2018/4/20
- * @Email zengxiangcai@yishufu.com
+ * @Email zxc200706@hotmail.com
  *
  ****/
 
